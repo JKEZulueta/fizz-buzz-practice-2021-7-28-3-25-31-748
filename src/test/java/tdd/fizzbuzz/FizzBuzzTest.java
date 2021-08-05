@@ -30,4 +30,14 @@ public class FizzBuzzTest {
 
 
     }
+
+    @Test
+    void should_return_order_number_when_count_off_given_order_number_multiple_of_5() {
+        int orderNumber = 5;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String result = fizzBuzz.countOff(orderNumber);
+
+        assertThat(result).isEqualTo("Buzz");
+    }
 }
